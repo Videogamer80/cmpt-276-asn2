@@ -1,27 +1,78 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+html {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  background-color: #a6192d;
+  margin-top: -8px;
+}
 
+header {
+  height: 5%;
+  width: 100%;
+  padding: 7% 0% 0% 0%;
+  color: #010101;
+}
+
+body {
+  height: 85%;
+  border-style: solid;
+  border-width: 20px 0px 40px 0px;
+  border-color: #3d3935;
+  padding: 0px 20px;
+  background-color: #ffffff;
+  color: black;
+}
+
+.Content {
+  width: 70%;
+  background-color: #e9eff1;
+  padding: 1% 1.2% 1.5%;
+  margin-top: 2%;
+  border-style: none;
+  border-radius: 3px;
+}
+
+p {
+  margin: 0px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 4px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+h1 {
+  margin: 0% 0% 0% 0%;
+  font-family: Helvetica, sans-serif;
+}
+
+h2 {
+  color: #b61720;
+}
+
+button {
+  min-width: 80px;
+  padding: 11px 9px 9px;
+  margin: 0px;
+  background-color: #b51119;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 3px;
+}
+
+input[type="number"] {
+  width: 46px;
+  height: 22px;
+}
+
+input[type="text"] {
+  height: 22px;
+}

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Karsten Ngai-Natsuhara asn2</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="/../../stylesheets/main.css">
     </head>
         
     <header>
@@ -27,7 +27,7 @@
                         <td><%= r.id %></td>
                         <td><%= r.name %></td>
                         <td><%= r.color %></td>
-                        <td><a href="javeascript: void(0)" id=<%= r.id %> >Submit</a></td>
+                        <td><a href="/users/<%= r.id %>">Bio</a></td>
                     </tr>
                 <% }); %>
             </table>
@@ -35,25 +35,22 @@
 
             <table style="width:80%" id="Table">
                 <tr>
-                    
-                    <th style="width:20%">Name</th>
-                    <th style="width:20%">Color</th>
-                    <th style="width:20%">Width</th>
-                    <th style="width:20%">Height</th>
-                    <th style="width:20%"></th>
+                    <th style="width:1/6">Name</th>
+                    <th style="width:1/6">Color</th>
+                    <th style="width:1/6">Width</th>
+                    <th style="width:1/6">Height</th>
+                    <th style="width:1/6"></th>
                 </tr>
                 <tr>
-                    <td><input type="number" id="newName" min="0"></td>
-                    <td><input type="number" id="newColor" min="0"></td>
-                    <td><input type="number" id="newWidth" min="0"></td>
-                    <td><input type="number" id="newHeight" min="0"></td>
-                    <td><a href="javeascript: void(0)" onclick="Submit()">Submit</a></td>
+                    <form action="/addrect" method="post">
+                        <td><input type="text" name="newName" min="0"></td>
+                        <td><input type="text" name="newColor" min="0"></td>
+                        <td><input type="number" name="newWidth" min="0"></td>
+                        <td><input type="number" name="newHeight" min="0"></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </form>
                 </tr>
             </table>
-
-            <script>
-                //javascript stuff here
-            </script>
 
         </div>
     </body>

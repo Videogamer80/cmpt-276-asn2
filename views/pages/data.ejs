@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <%- include ("../partials/header.ejs") %>
-</head>
+    <head>
+        <title>Karsten Ngai-Natsuhara asn2</title>
+        <link rel="stylesheet" href="/../../stylesheets/main.css">
+    </head>
+        
+    <header>
+        <h1>Rectangle Database</h1>
+    </header>
 
-<body>
+    <body>
+        <div class="Content">
+            <% rows.forEach(function(r) { %>
+                <h2>Rectangle: <%= r.name %></h2>
 
-<%- include ("../partials/nav.ejs") %>
+                <table style="width:40%" id="Table">
+                    <tr>
+                        <th>ID</th>
+                        <td><%= r.id %></td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <td><%= r.name %></td>
+                    </tr>
+                    <tr>
+                        <th>Color</th>
+                        <td><%= r.color %></td>
+                    </tr>
+                    <tr>
+                        <th>Width</th>
+                        <td><%= r.width %></td>
+                    </tr>
+                    <tr>
+                        <th>Height</th>
+                        <td><%= r.height %></td>
+                    </tr>
+                </table>
 
-<div class="container">
-<h2>Database Results</h2>
+                <br>
 
-<ul>
-    <% results.forEach(function(r) { %>
-        <li><%= r.id %> - <%= r.name %></li>
-    <% }); %>
-</ul>
+                <!-- <form action="/delete" method="post">
+                    <input type="submit" value="Delete">
+                </form> -->
+            <% }); %>
 
-</div>
+            <script>
+                //javascript here
+            </script>
 
-</body>
+        </div>
+    </body>
 </html>
