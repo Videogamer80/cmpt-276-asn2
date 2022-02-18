@@ -62,12 +62,12 @@ app.get('/users/:id', (req,res)=>{
 })
 
 //delete rectangles
-app.get('/delete', (req,res)=>{
-  let currentID = req.params.id;
+// app.get('/delete', (req,res)=>{
+//   let currentID = req.params.id;
 
-  pool.query(`delete from rect where id=${currentID}`);
+//   pool.query(`delete from rect where id=${currentID}`);
 
-  setTimeout(() => { res.redirect('/'); }, 500);
-})
+//   setTimeout(() => { res.redirect('/'); }, 500);
+// })
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
