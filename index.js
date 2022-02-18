@@ -6,11 +6,11 @@ var app = express();
 
 const { Pool } = require('pg');
 var pool = new Pool({
-    connectionString: "postgres://postgres:bootstrap@localhost/users"
-    // connectionString: "postgres://djdnzwjfbngyrr:cb97dd3f8495d27f7a4b621316da8e5ee295b2abebb1a50c1050c24522683f1c@ec2-3-228-222-169.compute-1.amazonaws.com:5432/d402ckdamtdvna",
-    // ssl: {
-    //     rejectUnauthorized: false
-    // }
+    // connectionString: "postgres://postgres:bootstrap@localhost/users"
+    connectionString: "postgres://djdnzwjfbngyrr:cb97dd3f8495d27f7a4b621316da8e5ee295b2abebb1a50c1050c24522683f1c@ec2-3-228-222-169.compute-1.amazonaws.com:5432/d402ckdamtdvna",
+    ssl: {
+        rejectUnauthorized: false
+    }
 })
 
 //stuff that needs to be included
